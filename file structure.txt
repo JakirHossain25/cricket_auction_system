@@ -1,0 +1,15 @@
+cricket-auction-system/
+├── main.py                 # Entry point
+├── ui.py                   # User interface
+├── models.py              # Data models
+├── database.py            # Storage operations
+├── auction_controller.py  # Business logic
+├── players/               # Player images
+│   ├── A/                # Category A
+│   ├── B/                # Category B
+│   ├── C/                # Category C
+│   └── D/                # Category D
+├── requirements.txt       # Dependencies
+├── build.bat             # Windows build
+├── build.sh              # Linux/Mac build
+└── README.md             # Documentation
