@@ -1,0 +1,1 @@
+pyinstaller --onefile --windowed --add-data "players;players" --add-data "auction_data.json;." --hidden-import=reportlab --hidden-import=reportlab.pdfbase --hidden-import=reportlab.pdfbase.ttfonts --hidden-import=reportlab.lib --hidden-import=reportlab.platypus main.py
