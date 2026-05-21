@@ -1,30 +1,52 @@
-# ক্রিকেট খেলোয়াড় নিলাম ব্যবস্থা - সুজাপুর টুর্নামেন্ট
+# Cricket Player Auction System 🏏
 
-## গুরুত্বপূর্ণ বৈশিষ্ট্যসমূহ
+একটি সম্পূর্ণ ডেস্কটপ অ্যাপ্লিকেশন যা ক্রিকেট টুর্নামেন্টের জন্য খেলোয়াড় নিলাম পরিচালনা করে। সুজাপুর টুর্নামেন্টের জন্য বিশেষভাবে ডিজাইন করা।
 
-- **টাকার সাইন**: '৳' ব্যবহার করা হয়েছে
-- **ক্যাটাগরি ভিত্তিক বেস প্রাইস**:
-  - ক্যাটাগরি A: ৫০০ ৳
-  - ক্যাটাগরি B: ৩০০ ৳
-  - ক্যাটাগরি C: ২০০ ৳
-  - ক্যাটাগরি D: ১০০ ৳
+## 📌 Overview
 
-- **প্লেয়ার সিলেকশন সিস্টেম**:
-  - প্রতিটি ক্যাটাগরি থেকে র‍্যান্ডমভাবে প্লেয়ার উঠবে
-  - ক্যাটাগরি গুলো পর্যায়ক্রমে উঠবে: A → B → C → D → A...
-  - একই প্লেয়ার দুইবার উঠবে না (স্বয়ংক্রিয় ট্র্যাকিং)
+This application provides a complete solution for managing cricket player auctions with an intuitive interface, real-time bidding system, and comprehensive reporting features. Perfect for local tournaments, club auctions, and cricket league management.
 
-- **টিম তথ্য**:
-  - মালিক: Jakir, Fayaz, Sohag, Sabbir
-  - প্রতিটি টিম পাবে: ২০,০০০ পয়েন্ট
+## 🎯 Key Features
 
-- **পিডিএফ রিপোর্ট**:
-  - সম্পূর্ণ নিলামের ফলাফল পিডিএফ আকারে সংরক্ষণ
-  - টিমভিত্তিক ক্রয়কৃত খেলোয়াড়ের তালিকা
-  - নিলামের সম্পূর্ণ ইতিহাস
-  - মোট খরচের হিসাব
+- **Multi-Category System**: Players categorized into A, B, C, D with different base prices
+- **4-Team Management**: Complete team budget tracking and player purchase history
+- **Real-time Bidding**: Live bid updates with automatic increment rules
+- **PDF Reports**: Generate professional auction reports with all details
+- **Image Support**: Display player photos with automatic scaling
+- **Keyboard Shortcuts**: Full keyboard control for faster auction management
+- **Data Persistence**: Automatic save/load of auction state
+- **Fullscreen Mode**: Optimized for projector/large screen display
 
-## ইনস্টলেশন
+## 🏗️ Architecture
+
+- **Frontend**: PyQt5 for modern GUI
+- **Backend**: Python for business logic
+- **Database**: JSON-based lightweight storage
+- **Reporting**: ReportLab for PDF generation
+
+## 🎮 Auction Process
+
+1. **Category Rotation**: A → B → C → D → A (fair distribution)
+2. **Bid Rules**: Minimum increment of 50 or 10% of current bid
+3. **Budget Management**: Teams can't exceed their allocated budget
+4. **Auction History**: Complete record with timestamps
+
+## 💻 Technical Stack
+
+- **Language**: Python 3.8+
+- **GUI Framework**: PyQt5
+- **PDF Generation**: ReportLab
+- **Data Storage**: JSON
+- **Build Tool**: PyInstaller
+
+## 📦 Installation
 
 ```bash
+# Clone repository
+git clone https://github.com/yourusername/cricket-auction-system.git
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Run application
+python main.py
